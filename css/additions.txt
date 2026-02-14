@@ -1,0 +1,181 @@
+/* ============================================
+   EVORA CHILD DEVELOPMENT CENTER - STYLESHEET
+   ============================================ */
+
+/* CSS Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light only;
+    /* Primary Brand Colors - Evora Custom Scheme */
+    --primary-color: #3A80B1;
+    /* Medium blue - Trust & Professional */
+    --secondary-color: #80B374;
+    /* Soft green - Growth & Calm */
+    --accent-color: #F0623D;
+    /* Coral orange - Warm & Playful */
+    --dark-color: #2C3E50;
+    --light-color: #F8F9FA;
+    --text-color: #2d3436;
+    /* Dark gray - Main text */
+    --gray-color: #415599;
+    /* Muted navy - Secondary text */
+    --white: #FFFFFF;
+
+    /* CTA & Interactive Colors */
+    --cta-primary: #E93971;
+    /* Vibrant pink - Primary CTAs */
+    --cta-secondary: #F0623D;
+    /* Coral orange - Secondary CTAs */
+
+    /* Background Accents */
+    --bg-accent-1: #559FA2;
+    /* Teal green - Section backgrounds */
+    --bg-accent-2: #3B92BF;
+    /* Soft blue - Alternate sections */
+
+    /* Highlights & Icons */
+    --highlight-yellow: #ECA22A;
+    /* Mustard yellow - Icons & badges */
+    --highlight-green: #BACF36;
+    /* Yellow-green - Success states */
+
+    /* Additional Brand Colors */
+    --purple-wine: #672571;
+    /* Purple wine - Special accents */
+    --sky-blue: #328ECA;
+    /* Sky blue - Links & highlights */
+
+    /* Gradients - Updated with new colors */
+    --gradient-1: linear-gradient(135deg, #3A80B1 0%, #672571 100%);
+    --gradient-2: linear-gradient(135deg, #E93971 0%, #F0623D 100%);
+    --gradient-3: linear-gradient(135deg, #80B374 0%, #559FA2 100%);
+
+    /* Responsive Spacing Scale */
+    --spacing-xs: 0.5rem;
+    /* 8px */
+    --spacing-sm: 1rem;
+    /* 16px */
+    --spacing-md: 1.5rem;
+    /* 24px */
+    --spacing-lg: 2rem;
+    /* 32px */
+    --spacing-xl: 3rem;
+    /* 48px */
+    --spacing-2xl: 4rem;
+    /* 64px */
+    --spacing-3xl: 5rem;
+    /* 80px */
+
+    /* Container Padding */
+    --container-padding: 20px;
+    --container-padding-mobile: 16px;
+
+    --shadow-sm: 0 2px 4px rgba(58, 128, 177, 0.1);
+    --shadow-md: 0 4px 6px rgba(58, 128, 177, 0.15);
+    --shadow-lg: 0 10px 20px rgba(58, 128, 177, 0.2);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed;
+    position: relative;
+    color-scheme: light only;
+    overflow-x: hidden;
+    padding-top: 140px; /* Space for fixed header */
+}
+
+/* Subtle pattern overlay */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* ============================================
+   GLOBAL TEXT JUSTIFICATION FOR CARDS
+   ============================================ */
+
+/* Justify text in all card elements */
+.service-card p,
+.program-card p,
+.testimonial-card p,
+.team-card p,
+.wc-item p,
+.cert-item p,
+.mv-card p,
+.contact-card p,
+.sidebar-card p,
+.faq-item p,
+.intro-content p,
+.about-intro p,
+.program-content p,
+[class*="-card"] p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ============================================
+   ICON-BASED BULLET POINTS
+   ============================================ */
+
+/* Remove default bullets and add icon bullets */
+.service-card ul,
+.program-card ul,
+.program-content ul,
+.intro-content ul,
+.about-intro ul,
+.wc-item ul,
+.mv-card ul,
+.faq-item ul,
+[class*="-card"] ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-card ul li,
+.program-card ul li,
+.program-content ul li,
+.intro-content ul li,
+.about-intro ul li,
+.wc-item ul li,
+.mv-card ul li,
+.faq-item ul li,
+[class*="-card"] ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0.75rem;
+}
+
+.service-card ul li::before,
+.program-card ul li::before,
+.program-content ul li::before,
+.intro-content ul li::before,
+.about-intro ul li::before,
+.wc-item ul li::before,
+.mv-card ul li::before,
+.faq-item ul li::before,
+[class*="-card"] ul li::before {
+    content: '\f00c'; /* Font Awesome checkmark */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--cta-primary);
+    font-size: 0.9rem;
+}

@@ -1,0 +1,22 @@
+/* ============================================
+   GLOBAL TEXT JUSTIFICATION FOR CARDS
+   ============================================ */
+
+/* Justify text in all card elements */
+.service-card p,
+.program-card p,
+.testimonial-card p,
+.team-card p,
+.wc-item p,
+.cert-item p,
+.mv-card p,
+.contact-card p,
+.sidebar-card p,
+.faq-item p,
+.intro-content p,
+.about-intro p,
+.program-content p,
+[class*="-card"] p {
+    text-align: justify;
+    text-justify: inter-word;
+}

@@ -1,0 +1,17 @@
+/* Footer Logo Styling */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-icon {
+    height: 50px;
+    width: auto;
+}
+
+.footer-logo-brand {
+    height: 25px;
+    width: auto;
+}

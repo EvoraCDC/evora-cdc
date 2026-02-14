@@ -1,0 +1,24 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="200" fill="#E8F5E9"/>
+  
+  <!-- Icon Circle -->
+  <circle cx="200" cy="200" r="120" fill="#4CAF50" opacity="0.2"/>
+  
+  <!-- Hands/Therapy Icon -->
+  <g transform="translate(200, 200)">
+    <!-- Left hand -->
+    <path d="M -50 -20 Q -60 -30 -50 -40 L -30 -20 Q -35 -10 -50 -20 Z" fill="#4CAF50"/>
+    <!-- Right hand -->
+    <path d="M 50 -20 Q 60 -30 50 -40 L 30 -20 Q 35 -10 50 -20 Z" fill="#4CAF50"/>
+    <!-- Puzzle piece center -->
+    <rect x="-30" y="-10" width="60" height="60" rx="8" fill="#4CAF50"/>
+    <circle cx="-15" cy="20" r="8" fill="#E8F5E9"/>
+    <circle cx="15" cy="20" r="8" fill="#E8F5E9"/>
+    <path d="M -10 35 Q 0 45 10 35" stroke="#E8F5E9" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Name Label -->
+  <rect x="50" y="320" width="300" height="60" rx="10" fill="white" opacity="0.9"/>
+  <text x="200" y="355" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#4CAF50" text-anchor="middle">Anagha</text>
+</svg>
